@@ -1,0 +1,81 @@
+.static-box {
+  position: static; /* Default position */
+  background-color: lightblue;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.relative-box {
+  position: relative; /* Position relative to its normal position */
+  top: 20px; /* Move down 20px from its original position */
+  left: 20px; /* Move right 20px from its original position */
+  background-color: lightgreen;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.relative-parent {
+  position: relative; /* Positioned ancestor */
+  background-color: lightgray;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+.absolute-box {
+  position: absolute; /* Positioned relative to .relative-parent */
+  top: 10px;
+  left: 10px;
+  background-color: lightcoral;
+  padding: 20px;
+  border: 1px solid black;
+}
+.fixed-box {
+  position: fixed; /* Positioned relative to the viewport */
+  top: 10px;
+  right: 10px;
+  background-color: lightpink;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.sticky-box {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky; /* Sticky positioning */
+  top: 0; /* Stick to the top of the viewport */
+  background-color: lightyellow;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.parent {
+  color: blue; /* Parent element's color */
+}
+
+.child {
+  color: inherit; /* Child element inherits parent's color */
+  background-color: lightgray;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.linear-gradient-box {
+  background: linear-gradient(
+    to right,
+    red,
+    yellow
+  ); /* Gradients in CSS are used to create smooth transitions between two or more specified colors */
+  padding: 50px;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.radial-gradient-box {
+  background: radial-gradient(circle, red, yellow);
+  padding: 50px;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
